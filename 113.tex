@@ -108,7 +108,7 @@ Invert each bit for negative. Still two bit patterns for 0, which
 means result after operation not always correct.
 
 
-\paragraph{Two's complement}
+\paragraph{Two's Complement}
 
 Complement each bit and add 1 to result.
 \begin{enumerate}
@@ -116,6 +116,14 @@ Complement each bit and add 1 to result.
 \item $X+\bar{X}=1\dots111_{2}=-1\iff-X=\bar{X}+1$
 \item $n$ bits can represent any integer in the range from $-2^{n-1}$
 to $2^{n-1}-1$.
+\end{enumerate}
+
+\paragraph{Two's Complement Arithmetic}
+\begin{enumerate}
+\item \emph{Addition}: Add and discard carry bit.
+\item \emph{Subtraction}: Negate subtrahend, add as before.
+\item \emph{Overflow}: For two numbers which are both positive or both negative,
+overflow occurs iff the result has opposite sign.
 \end{enumerate}
 
 \paragraph{Excess $\boldsymbol{n}$}
@@ -127,15 +135,6 @@ Represent $X$ as $X+n$
 
 Each nibble (4 bits) encodes value from 0 - 9. Sign nibble at end
 (1100 for + or 1101 for -).
-
-
-\paragraph{Arithmetic}
-\begin{enumerate}
-\item \emph{Addition}: Add and discard carry bit.
-\item \emph{Subtraction}: Negate subtrahend, add as before.
-\item \emph{Overflow}: For two numbers which are both positive or both negative,
-overflow occurs iff the result has opposite sign.
-\end{enumerate}
 
 \subsection{Character Representation}
 
